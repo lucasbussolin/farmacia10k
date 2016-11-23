@@ -11,14 +11,10 @@ public class Cliente {
     private String cpf;
     private String rg;
     private String nome;
-    private Date dataNascimento;
     private String cep;
     private String endereco;
     private String numeroLogradouro;
     private String telefone;
-    private int idade;
-
-    
     
     public String getCpf() {
 		return cpf;
@@ -42,14 +38,6 @@ public class Cliente {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
 	}
 
 	public String getCep() {
@@ -82,14 +70,6 @@ public class Cliente {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
-	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
 	}
 
 	public Cliente getCliente() {

@@ -16,6 +16,7 @@ public class ResourceManager {
 	public static synchronized Connection getConnection() throws SQLException{
 		if(driver == null){
 			try{
+				@SuppressWarnings("rawtypes")
 				Class jdbcDriverClass = Class.forName(JDBC_DRIVER);
 				driver = (Driver) jdbcDriverClass.newInstance();
 				DriverManager.registerDriver(driver);

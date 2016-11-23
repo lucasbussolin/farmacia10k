@@ -1,7 +1,6 @@
 package produto;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,7 +17,6 @@ public class DAOProdutoImpl implements dao.DAOProduto {
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setString(1, m.getNome());
 			pst.setString(2, m.getFabricante());
-//			pst.setDate(3, (Date) m.getValidade());
 			pst.setDouble(3, m.getValorUnitario());
 			pst.setString(4, m.getDescricao());
 			pst.executeUpdate();
@@ -42,7 +40,6 @@ public class DAOProdutoImpl implements dao.DAOProduto {
 				medicamento = new Medicamento();
 				medicamento.setNome(rs.getString("nome"));
 				medicamento.setFabricante(rs.getString("fabricante"));
-//				medicamento.setValidade(rs.getDate("validade"));
 				medicamento.setValorUnitario(rs.getDouble("valor_unitario"));
 				medicamento.setDescricao(rs.getString("descricao"));
 			}

@@ -15,7 +15,6 @@ public class Medicamento extends Sujeito implements StrategyContabeis {
 
     private String nome;
     private String fabricante;
-   // private Date validade;
     private double valorUnitario;
     private String descricao;
 

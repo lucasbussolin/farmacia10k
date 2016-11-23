@@ -1,7 +1,5 @@
 package controle;
 
-import java.util.Date;
-
 import produto.Medicamento;
 
 public class Teste {
